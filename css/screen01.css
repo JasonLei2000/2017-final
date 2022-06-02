@@ -1,18 +1,29 @@
 body {
-    background-color: #FFFFFF;
-    font: normal 100% Helvetica, Arial, sans-serif;
+    font: normal 100% Helvetica, Arial, sans-serif; 
     }
   
   .header{
     display: flex;
    justify-content:space-around;
    align-items:center;
+   background-color: #ffffff;
   }
   
   .title-img{
     width: 15%;
   }
-  
+  .Home {
+    border: 2px solid #86BEF3;
+    color: #86BEF3;
+    background-color: #ffffff;
+   border-radius: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
    .action {
      border: 0px solid #86BEF3;
      color: #86BEF3;
@@ -36,6 +47,8 @@ body {
   .column {
     float: left;
     width: 25%;
+    text-align: center;
+    
   }
    
   .row:after {
@@ -43,7 +56,18 @@ body {
     display: table;
     clear: both;
   }
-   
+  .mainimage1{
+    width: 98%;
+  }
+  .mainimage2{
+    width: 99.2%;
+  }
+  .mainimage{
+    width: 100%;
+  }
+   .section{
+    background-color: #86BEF3;
+   }
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
