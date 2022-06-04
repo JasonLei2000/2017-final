@@ -12,34 +12,35 @@ body {
   .title-img{
     width: 15%;
   }
+  button{
+font-size: 1.2em;
+  }
   .Home {
-    border: 2px solid #86BEF3;
+    border: 0.125em solid #86BEF3;
     color: #86BEF3;
     background-color: #ffffff;
-   border-radius: 12px;
-    font-size: 24px;
+   border-radius: 0.7em;
     font-weight: 600;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
    .action {
-     border: 0px solid #86BEF3;
+     border: 0.125em solid #FFFFFF;
      color: #86BEF3;
      background-color: #FFFFFF;
-     border-radius: 12px;
-     font-size: 24px;
+     border-radius:  0.7em;
      font-weight: 600;
-     padding-right: 50px;
-     padding-left: 50px;
-     padding-top: 10px;
-     padding-bottom: 10px;
+     padding-right: 3em;
+     padding-left: 3em;
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
   
    }
   
    button:hover{
-    border: 2px solid #FFFFFF;
+    border: 0.125em solid #FFFFFF;
     color: #FFFFFF;
     background-color: #4FA5F8;
     cursor: pointer; 
@@ -48,6 +49,7 @@ body {
     float: left;
     width: 25%;
     text-align: center;
+    justify-content: center;
     
   }
    
@@ -57,19 +59,44 @@ body {
     clear: both;
   }
   .mainimage1{
-    width: 98%;
+  max-width: 100%;
+  width:98%;
   }
   .mainimage2{
-    width: 99.2%;
+    max-width: 100%;
+    width:99%;
   }
   .mainimage{
-    width: 100%;
+    max-width: 100%;
+    width:100%;
   }
    .section{
     background-color: #86BEF3;
    }
   @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+     width: 100%;
+     float: left;
+     text-align: center;
     }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .mainimage1{
+      max-width: 100%;
+      width:148%;
+      }
+      .mainimage2{
+        max-width: 100%;
+        width:99%;
+      }
+      .mainimage{
+        max-width: 100%;
+        width:100%;
+      }
+      .header{
+      font-size: 0.1em;
+      }
 }

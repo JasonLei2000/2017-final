@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task List</title>
+        <link href="css\screen02.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+    <body>
+    <main>
+         <!-- This is the navigation bar part -->
+   <div class="header">
+    <img src="image\logo.PNG" class="title-img" alt="This is the logo" >
+     <a href="html\Task List.html" class="button">
+    <button class="action">Task List </button> </a>
+<a href="html\Timer.html" class="button">
+     <button class="action"> Stopwatch Timer    </button></a>
+       <a href="html\music.html" class="button">
+     <button class="action"> Music Player</button></a>
+     <a href="html\Content Management.html" class="button">
+        <button class="action"> Content Management
+        </button></a>
+   </div>
+   <div class="AddTaskPart">
+    <h1>Tasks</h1>
+          <form id="tasklistform">
+          <!-- This is input of task name -->
+           <label for="task">Task name: </label>
+           <input type="text" name="task" id="TaskNameInput">
+
+           <!-- This is input of Due Date -->
+           <label for="dueDate">Due Date: </label>
+           <input type="date" name="dueDate" id="DueDateInput" >
+
+           <!-- This is input of Estimated time to complete -->
+           <label for="completionTime">Estimated time to complete: </label>
+           <input type="time" name="completionTime" id="EstimatedCompleteTimeInput">
+
+           <!-- This is input of Priority Rating -->
+           <label for="priority">Priority Rating:</label>
+           <select name="prority" id="priorityInput">
+               <option value="">choose one</option>
+               <option value="Low">Low</option>
+               <option value="Medium">Medium</option>
+               <option value="High">High</option>
+           </select>
+<br>
+           <!-- This is input of completionStatus -->
+           <label for="Completion">Completion Status and note: </label>
+           <input type="text" name="Completion" id="CompletionInput">
+           <br>
+
+           <button class="submit" type="submit">Submit</button>
+        </div>
+    </div>
+       </form>
+        <div calss="tasklist" id="tasklist">
+            <ul></ul>
+        </div>
+       </div>
+
+
+</div>
+      <script src="JS\Tasklist.js">
+        </script>
+</main>
+    
+</body>

@@ -1,0 +1,124 @@
+body {
+    font: normal 100% Helvetica, Arial, sans-serif; 
+    background-color: #6893BB;
+    }
+    button{
+      border: 0.125em solid #FFFFFF;
+      color: #FFFFFF;
+      background-color: #86BEF3;
+    }
+  
+  .header{
+    display: flex;
+   justify-content:space-around;
+   align-items:center;
+   background-color: #ffffff;
+  }
+  
+  .title-img{
+    width: 15%;
+  }
+  button{
+font-size: 1.2em;
+  }
+  .Home {
+    border: 0.125em solid #86BEF3;
+    color: #86BEF3;
+    background-color: #ffffff;
+   border-radius: 0.7em;
+    font-weight: 600;
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+   .action {
+     border: 0.125em solid #FFFFFF;
+     color: #86BEF3;
+     background-color: #FFFFFF;
+     border-radius:  0.7em;
+     font-weight: 600;
+     padding-right: 3em;
+     padding-left: 3em;
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
+  
+   }
+   .submit{
+    border: 0.125em solid #FFFFFF;
+    color: #86BEF3;
+    background-color: #FFFFFF;
+    border-radius:  0.7em;
+    font-weight: 600;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+ 
+  }
+   button:hover{
+    border: 0.125em solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #4FA5F8;
+    cursor: pointer; 
+  }
+
+  .AddTaskPart{
+    background-color: #86BEF3;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-around;
+  }
+  input {  
+    border: 2px solid #6893BB;
+    border-radius: 4px;
+    width: 240px;
+    height: 30px;}
+
+    select {  
+      border: 2px solid #6893BB;
+      border-radius: 4px;
+      width: 120px;
+      height: 30px;}
+    h1{
+        color: #FFFFFF;
+      }
+  .tasklist{
+justify-content:space-around
+  }
+  p{
+    border: 0.125em solid #FFFFFF;
+    color: #86BEF3;
+    background-color: #FFFFFF;
+    border-radius:  0.7em;
+    font-weight: 600;
+    font-size: 1em;
+    justify-content:center;
+    width: 95%
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .header{
+      font-size: 0.1em;
+      background-color: #ffffff;
+      }
+      input {  
+        border: 2px solid #6893BB;
+        border-radius: 4px;
+        width: 80px;
+        height: 30px;
+      }
+      .AddTaskPart{
+        background-color: #86BEF3;
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: space-around;
+        font-size: 0.1em;
+      }
+}
