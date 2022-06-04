@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <html lang="en"></html>
+        <title>Home Page</title>
+        <link href="css\screen01.css" rel="stylesheet" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="JS\time.js">
+        </script>
+    </head>
+    <body onload="start()">
+    <main>
+         <!-- This is the navigation bar part -->
+   <div class="header">
+    <img src="image\logo.PNG" class="title-img" alt="This is the logo" >
+     <a href="Task List.html" class="button">
+    <button class="action">Task List </button> </a>
+<a href="Timer.html" class="button">
+     <button class="action"> Stopwatch Timer    </button></a>
+       <a href="music.html" class="button">
+     <button class="action"> Music Player</button></a>
+     <a href="Content Management.html" class="button">
+        <button class="action"> Content Management
+        </button></a>
+   </div>
+   <div class="setiing">
+
+    <label for="Studytime">Study Time: </label>
+    <input type="text" name="Studytime" id="Studytime">
+
+    <label for="breaktime">Short Break: </label>
+    <input type="text" name="breaktime" id="breaktime">
+
+    <label for="Cycle">Cycle: </label>
+    <input type="text" name="Cycle" id="Cycle">
+
+    <label for="LongBreak">Long Break:: </label>
+    <input type="text" name="LongBreak" id="LongBreak">
+   </div>
+
+   <div class="Timer">
+       <div id="time">00:00:00</div>
+
+       <button id="start" onclick="flag=1">start</button>
+
+       <button id="stop" onclick="flag=0">stop</button>
+
+        <button id="end" onclick="flag=1;time=0;">end</button>
+
+   </div>
+    
+</body>
+</html>

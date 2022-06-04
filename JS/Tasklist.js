@@ -38,7 +38,7 @@ function addTasklist(taskName, dueDate, estimatedTime, priorityRating, completio
 // task list into html
 function ScreenTask(task) {
     let item = document.createElement("p");
-    item.innerHTML = "<h2>" + task.taskName + "</h2>"+"<p>" +"Due Date:"+ task.dueDate +"</br>"+ "Estimated time to complete:"+task.estimatedTime+"</br>"+"Priority Rating:"+task.priorityRating+"</br>"+"Completion Status:"+task.completionStatus+"</p>";
+    item.innerHTML = "<h2>" + task.taskName + "</h2>"+"<p>" +"Due Date:"+ task.dueDate +"</br>"+ "Estimated time to complete:"+task.estimatedTime+"</br>"+"Priority Rating:"+task.priorityRating+"</br>"+"Completion Status and Note:"+task.completionStatus+"</p>";
 
     tasklist.appendChild(item);
 // set a Delete button
