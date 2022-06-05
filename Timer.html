@@ -9,7 +9,7 @@
         <script src="JS\time.js">
         </script>
     </head>
-    <body>
+    <body >
     <main>
          <!-- This is the navigation bar part -->
    <div class="header">
@@ -34,25 +34,21 @@
     <label for="Cycle">Cycle: </label>
     <input type="text" name="Cycle" id="Cycle">
 
-    <label for="LongBreak">Long Break:: </label>
+    <label for="LongBreak">Long Break:</label>
     <input type="text" name="LongBreak" id="LongBreak">
 <br>
-   <button class="submit" type="submit" onclick="flag=1">Submit</button>
+   <button class="submit" type="submit" onclick="secondtimer()">Submit</button>
 
 </div></form>
-   <div class="Timer">
-       <br>
-       <br>
-       <div id="time" class="time">00:00:00</div>
-<br>
-<br>
-       <button id="start" onclick="flag=1">start</button>
-
-       <button id="stop" onclick="flag=0">stop</button>
-
-        <button id="end" onclick="flag=1;time=0;">end</button>
-
-   </div>
+   <div style="text-align: center">
+    <div class="Timer">
+    <input class="screentime" type="text" id="screentimetext" value="00:00:00" readonly>
+    <br>
+    <button type="button" onclick="start()">start</button> 
+    <button type="button" onclick="stop()">stop</button>
+     <button type="button" onclick="Reset()">end</button>
+</div>
+</div>
    <audio src='music\Nomak - Moon Flow.mp3' controls=""></audio>  
 </body>
 </html>

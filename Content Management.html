@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <html lang="en"></html>
+        <title>Task List</title>
+        <link href="css\screen4.css" rel="stylesheet" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+    <body>
+    <main>
+         <!-- This is the navigation bar part -->
+   <div class="header">
+    <img src="image\logo.PNG" class="title-img" alt="This is the logo" >
+     <a href="Task List.html" class="button">
+    <button class="action">Task List </button> </a>
+<a href="Timer.html" class="button">
+     <button class="action"> Stopwatch Timer    </button></a>
+
+     <a href="Content Management.html" class="button">
+        <button class="action"> Content Management
+        </button></a>
+   </div>
+   <div class="AddReference">
+    <h1>Reference List</h1>
+          <form id="referenceform">
+          <!-- This is input of Title -->
+           <label for="Title">Title: </label>
+           <input type="text" name="Title" id="TitleInput">
+
+           <!-- This is input of Title -->
+           <label for="Date">Year: </label>
+           <input type="text" name="Date" id="DateInput">
+
+           <!-- This is input of Author -->
+           <label for="Author">Author: </label>
+           <input type="text" name="Author" id="AuthorInput" >
+
+           <!-- This is input of completionStatus -->
+           <label for="URL">URL: </label>
+           <input type="text" name="URL" id="URLInput">
+           <br>
+
+           <button class="submit" type="submit">Submit</button>
+        </div>
+    </div>
+       </form>
+        <div calss="referencelist" id="referencelist">
+            <ul></ul>
+        </div>
+       </div>
+
+       <audio src='music\Soulostar - Origami.mp3' controls=""></audio>
+</div>
+      <script src="JS\CM.js">
+        </script>
+</main>
+    
+</body>
+</html>
