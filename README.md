@@ -3,11 +3,11 @@ In this programming, I modified the mockup according to the tutorial's suggestio
 ## Home Page
 For the home page, this page is mainly to let the user know the functions of the network application. Clicking the button of Let's Go allows the user to enter the corresponding function.
 
-![This is my unmodified homepage](/image/old hm.PNG)
+![This is my unmodified homepage](image/old hm.PNG)
 
 For the first page, I deleted the music player section because I added the music bar to my task list, timer and Content Management. So the home page has only three sections, and these sections will be arranged vertically on the phone screen.
 
-![This is my modified home page](/image/home page.PNG)
+![This is my modified home page](image/home page.PNG)
 
 ## Task List page
 For the Task List page, this page allows workers to upload and manage their own tasks. Users can see the task name, duedate, estimated completion time, priority, and completion status. In the completion status section, users can add their own notes.
