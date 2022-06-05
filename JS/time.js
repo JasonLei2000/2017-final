@@ -30,6 +30,7 @@ function stop()
     window.clearInterval(int);
 }
 
+// the timer 
 function timer()
 {
     millisecond=millisecond+100;
@@ -52,6 +53,7 @@ function timer()
 
 }
 
+// The setting of Pomodoro Timer 
 function secondtimer(){
     let  Studytime = Studytime.value;
     let breaktime = breaktime.value;

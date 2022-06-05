@@ -18,7 +18,7 @@ button.addEventListener("click", function(event) {
     }
 })
 
-// creat tasklist array
+// creat reference array
 var addreferenceArray = [];
 
 function addreferencelist(Titlename, Date, Author, URL) {
@@ -32,12 +32,13 @@ function addreferencelist(Titlename, Date, Author, URL) {
     console.log(addreferenceArray);
     ScreenReference(Title);
 }
-// task list into html
+// reference list into html and creat APA 6th reference
 function ScreenReference(Title) {
     let item = document.createElement("p");
     item.innerHTML = "<h2>" + Title.Titlename + "</h2>"+"<p>"+"Year:"+Title.Date+"</br>"+"Author:"+Title.Author+"</br>"+"URL:"+Title.URL+"</br>"+"Reference(APA6):"+Title.Author+". ("+ Title.Date+"). "+Title.Titlename+". Retrieved from "+Title.URL+"</p>";
 
     referencelist.appendChild(item);
+    
 // set a Delete button
     let delButton = document.createElement("button");
     let delButtonText = document.createTextNode("Delete");

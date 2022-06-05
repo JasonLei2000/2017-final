@@ -7,6 +7,7 @@ var priorityInput = document.getElementById("priorityInput");
 var CompletionInput = document.getElementById("CompletionInput");
 var tasklist = document.querySelector("#tasklist > ul");
 const button = document.querySelector("#tasklistform > button")
+
 // button settings
 button.addEventListener("click", function(event) {
     event.preventDefault();
@@ -35,13 +36,15 @@ function addTasklist(taskName, dueDate, estimatedTime, priorityRating, completio
     console.log(addTaskListArray);
     ScreenTask(task);
 }
+
 // task list into html
 function ScreenTask(task) {
     let item = document.createElement("p");
     item.innerHTML = "<h2>" + task.taskName + "</h2>"+"<p>" +"Due Date:"+ task.dueDate +"</br>"+ "Estimated time to complete:"+task.estimatedTime+"</br>"+"Priority Rating:"+task.priorityRating+"</br>"+"Completion Status and Note:"+task.completionStatus+"</p>";
 
     tasklist.appendChild(item);
-// set a Delete button
+
+    // set a Delete button
     let delButton = document.createElement("button");
     let delButtonText = document.createTextNode("Delete");
     delButton.appendChild(delButtonText);
