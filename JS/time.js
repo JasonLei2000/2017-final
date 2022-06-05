@@ -7,7 +7,7 @@ var LongBreak = document.getElementById("LongBreak");
 // A stopwatch part
 var hour,min,sec;//define hour minutes second
 hour=min=sec=0;
-var millisecond=0;//define hour minutes second
+var millisecond=0;//define millisecond
 var int;
 
 // When the start button triggers
@@ -53,7 +53,7 @@ function timer()
 
 }
 
-// The setting of Pomodoro Timer 
+// The setting of second Timer 
 function secondtimer(){
     let  Studytime = Studytime.value;
     let breaktime = breaktime.value;
